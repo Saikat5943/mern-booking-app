@@ -50,7 +50,7 @@ This project is a comprehensive full-stack hotel booking website designed to pro
 5. **JWT_SECRET_KEY**:
     - This just needs to be any long, random string. You can google "secret key generator".
 
-7. **Frontend URL**:
+6. **Frontend URL**:
     - The `FRONTEND_URL` should point to the URL where your frontend application is running (typically `http://localhost:3000` if you're running it locally).
 
 ## Frontend Configuration
@@ -62,11 +62,10 @@ This project is a comprehensive full-stack hotel booking website designed to pro
     VITE_STRIPE_PUB_KEY=
     ```
 
-5. **VITE_API_BASE_URLL**:
+2. **VITE_API_BASE_URL**:
     - The `VITE_API_BASE_URL` should point to the URL where your backend application is running (typically `http://localhost:7000` if you're running it locally).
   
-  
-  ## Running the Application
+## Running the Application
 
 1. **Backend**:
     - Navigate to the `backend` directory.
@@ -79,12 +78,12 @@ This project is a comprehensive full-stack hotel booking website designed to pro
     - Start the frontend application: `npm run dev`.
     - The application should now be running on `http://localhost:5173` but verify this in your command line terminal
   
-  ## Running Automated Tests
+## Running Automated Tests
 
 1. **MongoDB Setup**: 
-    - You will ideally want to create a new mongoDb database for your tests to run against. This is to keep the data stable 
+    - You will ideally want to create a new mongoDb database for your tests to run against. This is to keep the data stable.
     - Sign up for an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-    - Create a new project (e.g e2e tests)
+    - Create a new project (e.g. e2e tests)
     - Create a new cluster and follow the instructions to set up a new database.
     - Once set up, obtain your MongoDB connection string and add it to the `MONGODB_CONNECTION_STRING` variable in your `.env.e2e` file.
       
@@ -95,18 +94,15 @@ This project is a comprehensive full-stack hotel booking website designed to pro
     - **Open MongoDB Compass**: Launch MongoDB Compass and connect to your database.
     - **Select the Database**: In Compass, select the database you are using for the automated tests (created in step 1).
     - **Import User Data**:
-        - Navigate to the `users` collection within your database. Create it if it doesn't exist
+        - Navigate to the `users` collection within your database. Create it if it doesn't exist.
         - Click on the "Add Data" button and select "Import File".
         - Browse to the location of your `test-users.json` file and select it.
         - Choose JSON as the file format and click "Import".
         - The test user data will be added to the `users` collection.
-<<<<<<< HEAD
-        - user login: ghoraisaikat997@gmail.com/123456
-=======
-        - user login: ghoraisaikat997@gmail.com
->>>>>>> b207f823c4926b4d4a384fb5c5503aa7eb7fab73
-    -  **Locate the Test Hotel File**:
-        - Navigate to the `hotels` collection within your database. Create it if it doesn't exist
+        - user login: ghoraisaikat997@gmail.com / 123456
+
+    - **Locate the Test Hotel File**:
+        - Navigate to the `hotels` collection within your database. Create it if it doesn't exist.
         - Repeat the import process as you did for the user data, but this time select the `test-hotel.json` file.
         - Ensure the file format is set to JSON and click "Import".
         - The test hotel data will be added to the `hotels` collection.
@@ -115,7 +111,7 @@ This project is a comprehensive full-stack hotel booking website designed to pro
     - In VS Code install the [Playwright extension](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
     - Navigate to the `e2e-tests` directory.
     - Install dependencies: `npm install`.
-    - Start the frontend and backend server using the steps above
+    - Start the frontend and backend server using the steps above.
     - [Using the Playwright extension to run the tests](https://playwright.dev/docs/getting-started-vscode#running-tests)
   
 ## Deployment
@@ -149,4 +145,3 @@ To deploy this application using Render.com, follow these steps:
 ### Notes:
 - Ensure that you have configured Render.com with the appropriate build and start commands for both the frontend and backend services.
 - Adjust the build and start commands if your project setup differs from the standard practices.
-
