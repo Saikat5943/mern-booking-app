@@ -100,11 +100,7 @@ This project is a comprehensive full-stack hotel booking website designed to pro
         - Browse to the location of your `test-users.json` file and select it.
         - Choose JSON as the file format and click "Import".
         - The test user data will be added to the `users` collection.
-<<<<<<< HEAD
-        - user login: ghoraisaikat997@gmail.com/123456
-=======
-        - user login: ghoraisaikat997@gmail.com
->>>>>>> b207f823c4926b4d4a384fb5c5503aa7eb7fab73
+        - user login: asitsahoo3921@gmail.com/123456
     -  **Locate the Test Hotel File**:
         - Navigate to the `hotels` collection within your database. Create it if it doesn't exist
         - Repeat the import process as you did for the user data, but this time select the `test-hotel.json` file.
